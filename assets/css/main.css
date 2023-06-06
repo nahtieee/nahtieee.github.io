@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  color: #252525;
+  font-family: Helvetica, Arial, 'Times New Roman', Times, serif;
+  height: 100%;
+  text-align: center;
+  float: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ddecs {
+  font-family: 'Poppins', sans-serif;
+}
+
+body.ddeBody h5{
+  line-height: 182.6%;
+} 
+
+.jumbotron{
+  min-height: 100vh;
+}
+
+.jumbotron img.bg {
+  min-height: 100%;
+	width: 100%;
+  height: auto;
+	position:absolute;
+  top: 0;
+  left: 0;
+  z-index:-5;
+  
+}
+
+@media only screen and (max-width: 1300px) {
+  .jumbotron img.bg {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .jumbotron img.bg {
+      display: none;
+  }
+}
+
+#aboutText {
+  text-align: left;
+  font-weight: 300;
+}
+
+
+
+.navbar {
+  font-weight: bold;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+
+}
+
+#socials {
+  height: 4rem;
+  width: 4rem;
+  float: center;
+}
+
+.arrow-down {
+
+  margin: 0 auto;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-right: 7px solid #252525;
+  border-bottom: 7px solid #252525;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.animationText-v1 {
+  color: #252525;
+  font-size: 4rem;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+
+}
+
+.animationText-v2 {
+  border-bottom: 2px solid rgb(173, 173, 173);
+  color: rgb(112, 189, 252);
+}
+
+a {
+  color: #000000;
+}
+
+.homeProjectText {
+  text-align: left; 
+  margin: auto; 
+}
+
+#ddeLinks a{
+  color: #6C5AA4;
+}
+
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #252525;
+  /* Fallback color */
+  background-color: #252525;
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 45%;
+}
+
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 35%;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.row>.column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portfolioProfile {
+  border-radius: 20px;
+}
+
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homeProjectImage:hover .img-fluid {
+  opacity: 0.8;
+
+}
